@@ -7,11 +7,12 @@ Click for a 12-minute presentation of the project:
 [![GO TO video presentation](https://img.youtube.com/vi/odBVL16osb4/1.jpg)](https://www.youtube.com/watch?v=odBVL16osb4)
 
 # Description
-This project explores and compares the benefits of Bayesian Regression over OLS Regression in predicting the yearly cost of natural disasters. Building a reliable prediction model can help increase economic preparedness should a natural disaster occur. Specifically, this project tackles the effects of Hurricanes across the United States as our team found it was the most documented out of the common natural disasters in the US. 
+This project explores and compares the benefits of Bayesian Regression over OLS Regression in predicting the yearly cost of natural disasters. Building a reliable prediction model can help increase economic preparedness should a natural disaster occur. Specifically, this project tackles the effects of Floods and Hurricanes across the United States as our team found they were the most documented out of the common natural disasters in the US. 
 
 Data used in this project:
 1. [HURRICANE DATA] (https://www.kaggle.com/datasets/averyjackson/hurricaneinfo)
-2. [HOUSING MARKET DATA] (https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_covid19/weekly_housing_market_data_most_recent.tsv000) for normalization
+2. [FLOOD DATA] (https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims)
+3. [HOUSING MARKET DATA] (https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_covid19/weekly_housing_market_data_most_recent.tsv000) for normalization and calculate claims per state
 
 To get accurate and up-to-date predictions, we recommend downloading the latest data files 
 
@@ -21,21 +22,33 @@ To get accurate and up-to-date predictions, we recommend downloading the latest 
   2. [`Regression Analysis.Rmd`](/Hurricane%20Project/Notebooks/Regression%20Analysis.Rmd) the R notebook containing the analysis pipeline
   3. [`HurricaneDataEDA.ipynb`](/Hurricane%20Project/EDA/HurricaneDataEDA.ipynb) the Jupyter Notebook containing the EDA
 
-# Installation
+# Analysis
 #### Requirements:
  - Alteryx
  - R version 4.1.2 or higher 
- - RStudio (or preferred R IDE)
  - Python 3.9 or higher
  - Python libraries: pandas, seaborn, matplotlib, numpy, folium
 #### Data Pre-processing
 Data pre-processing was done in the Alteryx program using the data sets stated above (Hurricane data and Housing market data). Our team decided to use Alteryx as it can be used to automate workflows for data cleaning and preparation. This program also allows us to save time in building up-to-date data sets for our models if needed.
-![Alteryx Pipeline](/Hurricane%20Project/Images/Alteryx.PNG)
+![Alteryx Pipeline](/Hurricane%20Project/Images/Alteryx.png)
 #### Exploratory Data Analysis (EDA)
 EDA of the Hurricane data can be viewed by opening [`HurricaneDataEDA.ipynb`](/Hurricane%20Project/EDA/HurricaneDataEDA.ipynb) directly on GitHub
-1. Noticed an increasing trend of hurricane events (although data for years 2010-2020 is incomplete as of July 2022)
+1. Notice an increasing trend of hurricane events (although data for years 2010-2020 is incomplete as of July 2022)
+
 ![Hurricane Event Trends](/Hurricane%20Project/Images/EDA03.PNG)
+
 2. These variables are highly correlated: "Year" and "Decade", "Pressure" and "WindSpeed", and "Year" and "WealthPerCap"
    - "Year" is also correlated with "Damage" and indicates that inflation might be an additional factor
    - "Population" has low to no correlation to any factor
+  
   ![Correlation Matrix](/Hurricane%20Project/Images/EDA04.PNG)
+
+The data was later adjusted by normalizing costs per year with a 'Table of Historical Inflation Rates in Percent' data set for 1914 to 2022. As mentioned, our models can be updated with up-to-date datasets through Alteryx if need be.
+#### Models - Bayesian Regression
+Analysis can be found in [`Regression%20Analysis.Rmd`](/Hurricane%20Project/Notebooks/Regression%20Analysis.Rmd)
+
+We found that the data can be explained with the variables "Area", "WealthPerCap" and "Population." Model assumptions show that the model is a good fit and the model should be statistically reliable.
+
+![Model Assumptions](/Hurricane%20Project/Images/Bayesian_assumptions.png)
+#### Models - OLS Regression
+Analysis 
