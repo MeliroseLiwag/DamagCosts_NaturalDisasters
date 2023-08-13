@@ -17,7 +17,7 @@ To get accurate and up-to-date predictions, we recommend downloading the latest 
 
 # Documents
 * Code: Contains data and code files to run the project
-  1. [`HurricaneData.csv`](/Hurricane%20Project/Data/HurricaneData.csv) a simple version of the cleaned data
+  1. [`HurricaneData.csv`](https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane%20Project/Data/HurricaneData.csv) a simple version of the cleaned data
   2. [`Regression Analysis.Rmd`](/Hurricane%20Project/Notebooks/RegressionAnalysis.Rmd) the R notebook containing the analysis pipeline
   3. [`HurricaneDataEDA.ipynb`](/Hurricane%20Project/EDA/HurricaneDataEDA.ipynb) the Jupyter Notebook containing the EDA
 
