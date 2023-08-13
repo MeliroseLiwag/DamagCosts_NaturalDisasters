@@ -47,8 +47,11 @@ The data was later adjusted by normalizing costs per year with a 'Table of Histo
 #### Models - Bayesian Regression
 Analysis can be found in [`Regression%20Analysis.Rmd`](/Hurricane%20Project/Notebooks/Regression%20Analysis.Rmd)
 
-We found that the data can be explained with the variables "Area", "WealthPerCap" and "Population." Model assumptions show that the model is a good fit and the model should be statistically reliable.
+We found that the data can be explained with the variables "Area", "WealthPerCap" and "Population." Model assumptions show that the model is a good fit and that the model should be statistically reliable.
 
 ![Model Assumptions](/Hurricane%20Project/Images/Bayesian_assumptions.png)
 #### Models - OLS Regression
-Analysis 
+Analysis can be found in [`Regression%20Analysis.Rmd`](/Hurricane%20Project/Notebooks/Regression%20Analysis.Rmd)
+Model assumptions also show that this model is a good fit and should be statistically reliable. The response variable is log-transformed due to heteroscedasticity.
+
+![Model Assumptions](/Hurricane%20Project/Images/OLS_assumptions.png)
