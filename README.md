@@ -18,7 +18,7 @@ To get accurate and up-to-date predictions, we recommend downloading the latest 
 # Documents
 * Code: Contains data and code files to run the project
   1. [`HurricaneData.csv`](/Hurricane%20Project/Data/HurricaneData.csv) a simple version of the cleaned data
-  2. [`Regression Analysis.Rmd`](/Hurricane%20Project/Notebooks/RegressionAnalysis.Rmd) the R notebook containing the analysis pipeline
+  2. [`Regression Analysis.Rmd`](/Hurricane%20Project/Notebooks/Regression%20Analysis.Rmd) the R notebook containing the analysis pipeline
   3. [`HurricaneDataEDA.ipynb`](/Hurricane%20Project/EDA/HurricaneDataEDA.ipynb) the Jupyter Notebook containing the EDA
 
 # Installation
@@ -30,7 +30,12 @@ To get accurate and up-to-date predictions, we recommend downloading the latest 
  - Python libraries: pandas, seaborn, matplotlib, numpy, folium
 #### Data Pre-processing
 Data pre-processing was done in the Alteryx program using the data sets stated above (Hurricane data and Housing market data). Our team decided to use Alteryx as it can be used to automate workflows for data cleaning and preparation. This program also allows us to save time in building up-to-date data sets for our models if needed.
+![Alteryx Pipeline](/Hurricane%20Project/Images/Alteryx.PNG)
 #### Exploratory Data Analysis (EDA)
-EDA of the Hurricane data can be viewed by opening [`HurricaneDataEDA.ipynb`](https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane-Project/EDA/HurricaneDataEDA.ipynb) directly on GitHub
+EDA of the Hurricane data can be viewed by opening [`HurricaneDataEDA.ipynb`](/Hurricane%20Project/EDA/HurricaneDataEDA.ipynb) directly on GitHub
 1. Noticed an increasing trend of hurricane events (although data for years 2010-2020 is incomplete as of July 2022)
-![Hurricane Event Trends](/Hurricane%20Project/Images)
+![Hurricane Event Trends](/Hurricane%20Project/Images/EDA03.PNG)
+2. These variables are highly correlated: "Year" and "Decade", "Pressure" and "WindSpeed", and "Year" and "WealthPerCap"
+   - "Year" is also correlated with "Damage" and indicates that inflation might be an additional factor
+   - "Population" has low to no correlation to any factor
+  ![Correlation Matrix](/Hurricane%20Project/Images/EDA04.PNG)
