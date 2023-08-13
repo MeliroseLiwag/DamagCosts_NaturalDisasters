@@ -17,9 +17,9 @@ To get accurate and up-to-date predictions, we recommend downloading the latest 
 
 # Documents
 * Code: Contains data and code files to run the project
-  1. [`HurricaneData.csv`](https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane-Project/Data/HurricaneData.csv) a simple version of the cleaned data
-  2. [`Regression Analysis.Rmd`](https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane-Project/Notebooks/RegressionAnalysis.Rmd) the R notebook containing the analysis pipeline
-  3. [`HurricaneDataEDA.ipynb`](https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane-Project/Hurricane-Project/EDA/HurricaneDataEDA.ipynb) the Jupyter Notebook containing the EDA
+  1. [`HurricaneData.csv`]("Hurricane%20Project/Data") a simple version of the cleaned data
+  2. [`Regression Analysis.Rmd`](/Hurricane%20Project/Notebooks/RegressionAnalysis.Rmd) the R notebook containing the analysis pipeline
+  3. [`HurricaneDataEDA.ipynb`](/Hurricane%20Project/Hurricane-Project/EDA/HurricaneDataEDA.ipynb) the Jupyter Notebook containing the EDA
 
 # Installation
 #### Requirements:
@@ -33,4 +33,4 @@ Data pre-processing was done in the Alteryx program using the data sets stated a
 #### Exploratory Data Analysis (EDA)
 EDA of the Hurricane data can be viewed by opening [`HurricaneDataEDA.ipynb`](https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane-Project/EDA/HurricaneDataEDA.ipynb) directly on GitHub
 1. Noticed an increasing trend of hurricane events (although data for years 2010-2020 is incomplete as of July 2022)
-![Hurricane Event Trends](/Hurricane-Project/Images)
+![Hurricane Event Trends](/Hurricane%20Project/Images)
