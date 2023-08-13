@@ -74,4 +74,4 @@ In this time series analysis, we observed a decreasing trend over time and altho
 #### We expected the Bayesian regression model to outperform the OLS regression model in terms of predictive power and interpretability
 We found that there cannot be a direct comparison between the 2 models as each model has its own added benefits. Although the Bayesian regression model has better predictive power, posterior analysis of the Bayesian model is harder to interpret if one is unfamiliar with said model. With this, we will reject this hypothesis.
 
-![OLS intervals](/Hurricane%20Project/Images/Conf_Pred_Int.PNG) ![Bayesian Prediction](/Hurricane%20Project/Images/Bayesian_Prediction.png)
+![OLS intervals](/Hurricane%20Project/Images/Conf_Pred_Int.PNG) ![Bayesian Prediction](/Hurricane%20Project/Images/Bayesian_prediction.PNG)
