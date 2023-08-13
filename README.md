@@ -10,8 +10,8 @@ Click for a 12-minute presentation of the project:
 This project explores and compares the benefits of Bayesian Regression over OLS Regression in predicting the yearly cost of natural disasters. Building a reliable prediction model can help increase economic preparedness should a natural disaster occur. Specifically, this project tackles the effects of Hurricanes across the United States as our team found it was the most documented out of the common natural disasters in the US. 
 
 Data used in this project:
-2. [HURRICANE DATA] (https://www.kaggle.com/datasets/averyjackson/hurricaneinfo)
-3. [HOUSING MARKET DATA] (https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_covid19/weekly_housing_market_data_most_recent.tsv000) for normalization
+1. [HURRICANE DATA] (https://www.kaggle.com/datasets/averyjackson/hurricaneinfo)
+2. [HOUSING MARKET DATA] (https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_covid19/weekly_housing_market_data_most_recent.tsv000) for normalization
 
 To get accurate and up-to-date predictions, we recommend downloading the latest data files 
 
@@ -33,3 +33,4 @@ Data pre-processing was done in the Alteryx program using the data sets stated a
 #### Exploratory Data Analysis (EDA)
 EDA of the Hurricane data can be viewed by opening [`HurricaneDataEDA.ipynb`](https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane-Project/EDA/HurricaneDataEDA.ipynb) directly on GitHub
 1. Noticed an increasing trend of hurricane events (although data for years 2010-2020 is incomplete as of July 2022)
+<img witdh="887" alt="hurricane event trends" src="https://github.com/MeliroseLiwag/DamageCosts_NaturalDisasters/Hurricane Project/Images/EDA03.png"> 
